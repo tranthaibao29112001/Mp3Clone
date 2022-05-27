@@ -212,8 +212,10 @@ public class MainActivity extends AppCompatActivity implements SongItemClickList
         progressBar.setMax(SongPlayer.myMedia.getDuration());
         titleTxt.setText(song.getTitle());
         singerTxt.setText(song.getSinger());
+        if(!MainActivity.this.isDestroyed()){
+            Glide.with(this).load(song.getThumbnail()).apply(RequestOptions.circleCropTransform()).into(thumbnail);
 
-        Glide.with(this).load(song.getThumbnail()).apply(RequestOptions.circleCropTransform()).into(thumbnail);
+        }
     }
 
     @Override
@@ -234,6 +236,11 @@ public class MainActivity extends AppCompatActivity implements SongItemClickList
         startService(intent);
     }
 
+    @Override
+    protected void onPause() {
+        active = false;
+        super.onPause();
+    }
 
     @Override
     protected void onDestroy() {
