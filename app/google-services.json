@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "502739210845",
+    "project_id": "mp3clone-e46bf",
+    "storage_bucket": "mp3clone-e46bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502739210845:android:3f1ca626939f89cc0673b4",
+        "android_client_info": {
+          "package_name": "com.example.mp3clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502739210845-bis9kc9ljms1o44vj72nm8f9av317qlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO3H6xLEzDyco8mPc6DpSIuZqDLW2ikjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502739210845-bis9kc9ljms1o44vj72nm8f9av317qlu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
